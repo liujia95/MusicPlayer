@@ -16,4 +16,8 @@ interface ToolbarManager {
     fun initMainToolbar(){
         toolbar.setTitle(R.string.app_name)
     }
+
+    fun initSettingToolbar(){
+        toolbar.setTitle("设置")
+    }
 }

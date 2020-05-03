@@ -1,14 +1,11 @@
 package com.liujia95.musicplayer.ui.activity
 
-import android.os.Build
 import android.view.View
-import android.view.WindowManager
 import androidx.core.view.ViewCompat
 import androidx.core.view.ViewPropertyAnimatorListener
 import com.liujia95.musicplayer.R
 import com.liujia95.musicplayer.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_splash.*
-import org.jetbrains.anko.startActivity
 
 /**
  * author : liujia
@@ -26,7 +23,7 @@ class SplashActivity:BaseActivity(), ViewPropertyAnimatorListener {
         ViewCompat.animate(imageView)
             .scaleX(1.0f)
             .scaleY(1.0f)
-            .setDuration(2000)
+            .setDuration(500)
             .setListener(this)
             .start()
     }
